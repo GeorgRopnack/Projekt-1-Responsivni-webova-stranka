@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto";
+}
+body img,
+body picture,
+body svg,
+body video {
+  display: block;
+  max-width: 100%;
+}
+body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .content {
+  padding: 5rem 15rem;
+}
+body h1 {
+  margin-bottom: 1rem;
+}
+body .about h1,
+body .activities h1,
+body .contact h1,
+body .reviews h1,
+body .first-gallery h1,
+body .footer h1 {
+  font-size: 3rem;
+}
+body .about p,
+body .activities p,
+body .contact p,
+body .reviews p,
+body .first-gallery p,
+body .footer p {
+  font-size: 1.3rem;
+}
+body .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: #33292a;
+  color: white;
+  font-weight: 700;
+  padding: 1.5rem 15rem;
+}
+body .navigation svg {
+  display: none;
+}
+body .title {
+  background-image: url("./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body .title .title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  height: 50rem;
+  width: 100%;
+  font-size: 3rem;
+}
+body .about {
+  gap: 2rem;
+  display: flex;
+}
+body .about .about-text {
+  width: 50%;
+}
+body .about img {
+  width: 50%;
+  border-radius: 5px;
+}
+body .activities {
+  background-color: #33292a;
+  color: white;
+  text-align: center;
+}
+body .activities .activities-text {
+  margin-bottom: 10rem;
+}
+body .activities .activities-icons {
+  display: flex;
+  justify-content: space-between;
+}
+body .activities .activities-icons-hiking,
+body .activities .activities-icons-cycling,
+body .activities .activities-icons-surfing,
+body .activities .activities-icons-car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .activities .activities-icons-hiking p,
+body .activities .activities-icons-cycling p,
+body .activities .activities-icons-surfing p,
+body .activities .activities-icons-car p {
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-weight: 500;
+}
+body .activities .activities-icons-hiking img,
+body .activities .activities-icons-cycling img,
+body .activities .activities-icons-surfing img,
+body .activities .activities-icons-car img {
+  filter: invert(100%);
+  height: 7rem;
+  width: 7rem;
+}
+body .first-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "fgimg1 fgimg2 fgimg3" "fgimg4 grid-text fgimg5" "fgimg6 fgimg7 fgimg8";
+  gap: 1rem;
+}
+body .first-gallery img {
+  height: 100%;
+  border-radius: 5px;
+}
+body .first-gallery .grid-text {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 100%;
+}
+body .contact {
+  background-color: #644b4f;
+  color: white;
+  height: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+body .contact h1 {
+  width: 100%;
+  margin-right: 5rem;
+}
+body .contact .contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .contact button {
+  height: 3rem;
+  width: 9rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+}
+body .contact button:active {
+  filter: brightness(1.1);
+}
+body .reviews {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+body .reviews .reviews-1 {
+  margin-bottom: 5rem;
+  padding: 0 15rem;
+}
+body .reviews .reviews-2 {
+  gap: 5rem;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+body .reviews .reviews-2 .reviews-person-1,
+body .reviews .reviews-2 .reviews-person-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .reviews .reviews-2 .reviews-person-1 .person-name,
+body .reviews .reviews-2 .reviews-person-2 .person-name {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+body .reviews .reviews-2 .reviews-person-1 img,
+body .reviews .reviews-2 .reviews-person-2 img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+body .second-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "sgimg1 sgimg2" "sgimg3 sgimg4";
+}
+body .second-gallery img {
+  width: 100%;
+}
+body .second-gallery .sgimg1 {
+  grid-area: sgimg1;
+}
+body .second-gallery .sgimg2 {
+  grid-area: sgimg2;
+}
+body .second-gallery .sgimg3 {
+  grid-area: sgimg3;
+}
+body .second-gallery .sgimg4 {
+  grid-area: sgimg4;
+}
+body .footer {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+body .footer a {
+  margin-bottom: 1rem;
+  color: #efa69d;
+  font-size: 1.5rem;
+}
+body .footer a:hover {
+  color: #e9877b;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1190px) {
+  body .content {
+    padding: 5rem 3rem;
+  }
+  body .navigation {
+    height: 7rem;
+    padding: 0 3rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .navigation svg {
+    display: flex;
+    filter: invert(100%);
+    height: 5rem;
+    width: 5rem;
+  }
+  body .navigation p {
+    display: none;
+  }
+  body .reviews .reviews-1 {
+    width: 100%;
+    padding: 0;
+  }
+  body .reviews .reviews-2 {
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+  }
+  body .contact {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .about p,
+  body .activities p,
+  body .contact p,
+  body .reviews p {
+    font-size: 1.3rem;
+  }
+  body .content {
+    padding: 5rem 1rem;
+  }
+  body .navigation {
+    height: 7rem;
+    padding: 0 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .navigation svg {
+    display: flex;
+    filter: invert(100%);
+    height: 5rem;
+    width: 5rem;
+  }
+  body .navigation p {
+    display: none;
+  }
+  body .title .title-text {
+    font-size: 2.5rem;
+  }
+  body .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .about .about-text,
+  body .about img {
+    width: 100%;
+  }
+  body .activities .activities-text {
+    margin-bottom: 2rem;
+  }
+  body .activities .activities-icons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body .first-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "fgimg1" "fgimg2" "fgimg3" "fgimg4" "grid-text" "fgimg5" "fgimg6" "fgimg7" "fgimg8";
+  }
+  body .reviews .reviews-1 {
+    width: 100%;
+    padding: 0;
+  }
+  body .reviews .reviews-2 {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+  body .second-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "sgimg1" "sgimg2" "sgimg3" "sgimg4";
+  }
+  body .contact {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40rem;
+  }
+  body .contact .contact-text {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .footer {
+    height: 0;
+    padding: 3rem 1rem;
+  }
+  body .footer a {
+    font-size: 1.2rem;
+  }
+  body .footer p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 368px) {
+  body .about h1,
+  body .activities h1,
+  body .contact h1,
+  body .reviews h1,
+  body .first-gallery h1 {
+    font-size: 2rem;
+  }
+  body .about p,
+  body .activities p,
+  body .contact p,
+  body .reviews p,
+  body .first-gallery p {
+    font-size: 1.1rem;
+  }
+  body .title .title-text {
+    font-size: 2rem;
+  }
+}
